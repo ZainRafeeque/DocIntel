@@ -15,4 +15,4 @@ services:
       - key: GOOGLE_API_KEY
         sync: false
       - key: CORS_ORIGINS
-        value: http://localhost:3000,https://docintel.vercel.app
+        value: http://localhost:3000,https://doc-intel-delta.vercel.app
