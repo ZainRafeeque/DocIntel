@@ -14,7 +14,7 @@ class Settings(BaseSettings):
 
     # Models
     EMBEDDING_MODEL: str = "sentence-transformers/all-MiniLM-L6-v2"
-    LLM_MODEL: str = "llama-3.1-70b-versatile"  # Groq
+    LLM_MODEL: str = "llama-3.3-70b-versatile"  # Groq
 
     # Chunking
     CHUNK_SIZE: int = 600    # characters
