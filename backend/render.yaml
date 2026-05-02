@@ -5,6 +5,9 @@ services:
     env: docker
     plan: free
     region: oregon
+    rootDir: backend
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
     healthCheckPath: /health
     envVars:
       - key: GROQ_API_KEY
