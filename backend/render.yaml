@@ -1,0 +1,15 @@
+# Render blueprint - one-click deploy via https://render.com/deploy
+services:
+  - type: web
+    name: docintel-backend
+    env: docker
+    plan: free
+    region: oregon
+    healthCheckPath: /health
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false
+      - key: GOOGLE_API_KEY
+        sync: false
+      - key: CORS_ORIGINS
+        value: http://localhost:3000,https://docintel.vercel.app
